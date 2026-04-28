@@ -1,0 +1,23 @@
+# Environment variables — NEVER commit these, they contain real API keys
+.env
+.env.local
+.env.production
+ 
+# Node modules — reinstalled via npm install
+node_modules/
+ 
+# TypeScript build output
+dist/
+build/
+ 
+# Database
+*.db
+*.sqlite
+ 
+# Logs
+*.log
+logs/
+ 
+# OS clutter
+.DS_Store
+Thumbs.db
