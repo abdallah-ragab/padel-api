@@ -8,7 +8,6 @@ export function parseBody(req) {
 
 		req.on("end", () => {
 			const raw = Buffer.concat(chunks).toString("utf8");
-			// console.log("raw: ", Buffer.concat(chunks));
 			if (!raw) {
 				resolve({});
 				return;
